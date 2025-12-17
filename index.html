@@ -4,141 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naveen M S | Data Analyst Portfolio</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
     body { font-family: 'Inter', sans-serif; }
-    h2::after { content: ''; display: block; width: 60px; height: 3px; background: #3b82f6; margin-top: 10px; }
-    .project-card:hover { transform: scale(1.02); transition: 0.3s ease; }
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #3b82f6;
+      margin-top: 10px;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
   </style>
 </head>
+
 <body class="bg-white text-gray-900">
 
-  <!-- Navbar -->
-  <nav class="bg-blue-100 p-4 shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-extrabold tracking-wide">Naveen M S</h1>
-      <div class="space-x-6 font-medium">
-        <a href="#home" class="hover:text-blue-600">Home</a>
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </div>
+<!-- NAVBAR -->
+<nav class="bg-blue-100 p-4 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold">Naveen M S</h1>
+    <div class="space-x-6 font-medium">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#designs" class="hover:text-blue-600">Designs</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Home Section -->
-  <section id="home" class="py-20 text-center bg-gradient-to-br from-blue-50 to-blue-100">
-    <h2 class="text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-600">Naveen M S</span></h2>
-    <p class="text-xl text-gray-700">A Data Analyst who transforms raw data into powerful visuals and insights.</p>
-  </section>
+<!-- HOME -->
+<section id="home" class="py-20 text-center bg-gradient-to-br from-blue-50 to-blue-100">
+  <h2 class="text-5xl font-bold mb-4">
+    Hi, I'm <span class="text-blue-600">Naveen M S</span>
+  </h2>
+  <p class="text-xl text-gray-700">
+    A Data Analyst who transforms raw data into powerful insights and visuals.
+  </p>
+</section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="mb-4 text-gray-800 leading-relaxed">I hold a degree from KGCAS in BCA and specialize in data analysis, dashboard building, and creative UI/UX design. With a strong command over Tableau, Python, and modern front-end frameworks, I bring data to life in the most impactful way.</p>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li><strong>Languages:</strong> Python, R, JavaScript, HTML/CSS</li>
-        <li><strong>Tools:</strong> Tableau, React, Flutter, Firebase, Figma, Adobe Illustrator</li>
-        <li><strong>Interests:</strong> Data Visualization, Automation, Design Thinking</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-10">Projects</h2>
-
-      <!-- Tableau Project First -->
-      <div class="mb-12 bg-white p-6 rounded-xl shadow-lg project-card">
-        <h3 class="text-2xl font-semibold mb-2">📈 HR Analytics Dashboard (Tableau Masterpiece)</h3>
-        <p class="text-gray-700 mb-4 leading-relaxed">This HR dashboard is a stunning visualization built with Tableau Public. It provides real-time insights into employee demographics, department hiring trends, gender distribution, education vs salary, and performance metrics. With elegant dark mode styling and interactive filters, it's a perfect blend of analytics and design.</p>
-        <img src="Screenshot 2025-07-22 131243.png" alt="HR Dashboard" class="w-full rounded-xl shadow-lg border border-gray-300" />
-      </div>
-
-      <!-- Other Projects -->
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="bg-white p-6 rounded-xl shadow project-card">
-          <h3 class="text-xl font-semibold">🧠 Personality Type Analysis</h3>
-          <p class="text-gray-700">Analyzed introvert vs extrovert patterns using Python and R. Visuals were built in Tableau.</p>
-          <div class="grid grid-cols-2 gap-2 mt-4">
-            <img src="Screenshot 2025-07-14 110552.png" class="rounded shadow" />
-            <img src="Screenshot 2025-07-14 110646.png" class="rounded shadow" />
-            <img src="Screenshot 2025-07-14 110704.png" class="rounded shadow" />
-            <img src="Screenshot 2025-07-14 110727.png" class="rounded shadow" />
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow project-card">
-          <h3 class="text-xl font-semibold">📊 Sales Performance Dashboard</h3>
-          <p class="text-gray-700">A Tableau dashboard for tracking order volumes, regions, and fulfillment. Includes maps, pie charts, histograms, and KPIs.</p>
-          <img src="sales-dashboard.png.png" alt="Sales Dashboard" class="mt-4 w-full rounded-lg shadow" />
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow project-card">
-          <h3 class="text-xl font-semibold">🐔 Smart Poultry Farm IoT System</h3>
-          <p class="text-gray-700">Developed a real-time poultry monitoring app using Firebase. Includes mobile login, temperature sensors, and automation.</p>
-          <img src="iot.jpg" alt="IoT Project" class="mt-4 w-full rounded shadow" />
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow project-card">
-          <h3 class="text-xl font-semibold">🎨 YouTube Thumbnail Designs</h3>
-          <p class="text-gray-700">High-performing thumbnails designed using Canva. Focused on click-through and brand style.</p>
-          <div class="grid grid-cols-3 gap-2 mt-4">
-            <img src="crypt in 2025.png.png" alt="Crypto" class="rounded shadow" />
-            <img src="i quit my job !.png" alt="Quit Job" class="rounded shadow" />
-            <img src="YT THUMBNAIL.png" alt="YT Thumb" class="rounded shadow" />
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!-- Design Portfolio Section -->
-<section id="designs" class="py-20 bg-gray-50">
+<!-- ABOUT -->
+<section id="about" class="py-16">
   <div class="container mx-auto px-4">
-
-    <h2 class="text-3xl font-bold text-center mb-4">
-      Design Portfolio
-    </h2>
-
-    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-      A selection of branding creatives, posters, and digital designs created using Canva and design principles focused on clarity, hierarchy, and visual impact.
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-800 leading-relaxed mb-4">
+      I hold a BCA degree from KGCAS and specialize in data analysis, dashboard creation,
+      and creative UI-focused visual storytelling.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li><strong>Languages:</strong> Python, R, JavaScript, HTML, CSS</li>
+      <li><strong>Tools:</strong> Tableau, Power BI, React, Flutter, Figma</li>
+      <li><strong>Focus:</strong> Analytics, Visualization, UI/UX Thinking</li>
+    </ul>
+  </div>
+</section>
 
-      <!-- Design Card 1 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-       <img src="./assets/designs/post3.jpg" alt="Freelance Platform Poster" class="w-full h-72 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg">Freelance Platform Promotion</h3>
-          <p class="text-sm text-gray-600 mt-1">
-            Promotional poster focusing on trust, opportunity, and secure payments.
+<!-- PROJECTS -->
+<section id="projects" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+    <div class="mb-12 bg-white p-6 rounded-xl shadow-lg project-card">
+      <h3 class="text-2xl font-semibold mb-2">📈 HR Analytics Dashboard (Tableau)</h3>
+      <p class="text-gray-700 mb-4">
+        Interactive HR dashboard analyzing workforce trends, demographics,
+        salary distribution, and performance metrics.
+      </p>
+      <img src="Screenshot 2025-07-22 131243.png" class="rounded-xl shadow">
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-white p-6 rounded-xl shadow project-card">
+        <h3 class="text-xl font-semibold">🧠 Personality Type Analysis</h3>
+        <p class="text-gray-700">
+          Behavioral pattern analysis using Python & Tableau visualizations.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow project-card">
+        <h3 class="text-xl font-semibold">📊 Sales Performance Dashboard</h3>
+        <p class="text-gray-700">
+          KPI-focused sales dashboard with maps, trends, and filters.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN PORTFOLIO -->
+<section id="designs" class="py-20 bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50">
+  <div class="container mx-auto px-4">
+
+    <h2 class="text-3xl font-bold text-center mb-4">Design Portfolio</h2>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      Marketing posters created with strong hierarchy, color psychology,
+      and conversion-focused layouts.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="post9.png" class="w-full h-80 object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-xl">Restaurant Food Menu Promotion</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            High-impact food poster with bold CTA, discount emphasis,
+            and appetizing color contrast.
           </p>
         </div>
       </div>
 
-      <!-- Design Card 2 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-        <img src="./assets/designs/post6.jpg" alt="Talent Income Poster" class="w-full h-72 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg">Turn Talent into Income</h3>
-          <p class="text-sm text-gray-600 mt-1">
-            Bold visual hierarchy highlighting no-bidding freelance opportunities.
-          </p>
-        </div>
-      </div>
-
-      <!-- Design Card 3 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-        <img src="./assets/designs/post8.jpg" alt="Creative Tech Poster" class="w-full h-72 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg">Creative Tech Branding</h3>
-          <p class="text-sm text-gray-600 mt-1">
-            Futuristic branding poster combining UI/UX, tech, and innovation themes.
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="post10.png" class="w-full h-80 object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-xl">Super Food Weekend Offer</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Clean modern design highlighting 24/7 delivery,
+            weekend deals, and premium food visuals.
           </p>
         </div>
       </div>
@@ -147,26 +138,32 @@
   </div>
 </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-      <p class="mb-2">📧 Email: <a href="mailto:shailajanaveen1977@gmail.com" class="text-blue-600">shailajanaveen1977@gmail.com</a></p>
-      <p class="mb-2">🐙 GitHub: <a href="https://github.com/Naveen30032005" class="text-blue-600" target="_blank">github.com/Naveen30032005</a></p>
-      <p class="mb-4">🔗 LinkedIn: <a href="https://linkedin.com/in/naveen-ms911" class="text-blue-600" target="_blank">linkedin.com/in/naveen-ms911</a></p>
-      <button onclick="window.location.href='tel:+919600579754'" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
-        📞 Call Me
-      </button>
-    </div>
-  </section>
+<!-- CONTACT -->
+<section id="contact" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
 
-  <!-- Footer -->
-  <footer class="py-4 text-center bg-blue-100">
-    <p>&copy; 2025 Naveen M S. Designed with 💙</p>
-  </footer>
+    <p class="mb-2">📧 Email:
+      <a href="mailto:shailajanaveen1977@gmail.com" class="text-blue-600">
+        shailajanaveen1977@gmail.com
+      </a>
+    </p>
+
+    <p class="mb-4">🔗 LinkedIn:
+      <a href="https://linkedin.com/in/naveen-ms911" target="_blank" class="text-blue-600">
+        linkedin.com/in/naveen-ms911
+      </a>
+    </p>
+
+    <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+      📞 Call Me
+    </button>
+  </div>
+</section>
+
+<footer class="py-4 text-center bg-blue-100">
+  <p>&copy; 2025 Naveen M S. Designed with 💙</p>
+</footer>
 
 </body>
 </html>
-
-
-
